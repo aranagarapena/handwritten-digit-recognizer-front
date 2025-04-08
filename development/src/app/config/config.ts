@@ -1,4 +1,4 @@
-import { environment } from "../../environments/environment.development";
+import { environment } from "../../environments/environment";
 
 export const URL_BACKEND = environment.URL_BACKEND;
 export const URL_BACKEND_DNS= environment.URL_BACKEND_DNS;
