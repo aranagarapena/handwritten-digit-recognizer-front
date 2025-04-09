@@ -1,13 +1,15 @@
-1. Desarrollo:
+1.- COMPILAR: 
 
-    - Colocado en el directorio '/development' ejecutar: 
-        ng serve 
+    1.1.- Colocado en el directorio '/development' ejecutar: 
 
-2. Producción:
-    -
-    -
+        1.1.1.- Desarrollo:
+            ng serve 
 
-HAcer esto siempre:
-    - Moverse al directorio '/front' y ejecutar: 
+        1.1.2.- Producción:
+            ng build --configuration=production
+
+2.- HACER ESTO SIEMPRE:
+    2.1.- Moverse al directorio '/front' y ejecutar: 
         Move-Item -Path docs/browser/* -Destination docs/ -Force
         Remove-Item -Path docs/browser -Recurse -Force
+
