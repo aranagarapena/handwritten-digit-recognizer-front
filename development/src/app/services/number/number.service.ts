@@ -2,22 +2,25 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { URL_API_USER_GET_ALL, URL_API_USER_REGISTER, URL_BACKEND_DNS } from '../../config/config';
+import { environment  } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NumberService {
 
-  private baseUrl = URL_BACKEND_DNS;
+  private baseUrl =  `${environment.URL_BACKEND}`;
+  private storeNumberApiUrl = `${environment.URL_API_NUMBER_ADD}`;
 
   constructor(private http: HttpClient) { }
 
   // método para insertar un número dibujado a mano en el servidor
   addNumber(payload: any): Observable<any> {
-    return this.http.post(this.baseUrl + '/api/game/storenumber', payload).pipe(
+
+    return this.http.post(this.baseUrl + this.storeNumberApiUrl, payload).pipe(
       catchError(this.handleError)
     );
+
   }
 
     /*

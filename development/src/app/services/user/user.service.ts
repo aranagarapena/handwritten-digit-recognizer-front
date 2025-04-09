@@ -3,6 +3,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { URL_API_USER_GET_ALL, URL_API_USER_REGISTER, URL_BACKEND_DNS } from '../../config/config';
+import { environment  } from '../../../environments/environment';
 
 
 @Injectable({
@@ -12,7 +13,9 @@ import { URL_API_USER_GET_ALL, URL_API_USER_REGISTER, URL_BACKEND_DNS } from '..
 
 export class UserService {
 
-  private baseUrl = URL_BACKEND_DNS;
+  // private baseUrl = URL_BACKEND_DNS;
+  private baseUrl =  `${environment.URL_BACKEND}`;
+  private storeUserApiUrl = `${environment.URL_API_USER_REGISTER}`;
 
   constructor(private http: HttpClient) { }
 
@@ -20,7 +23,7 @@ export class UserService {
     Método para añadir usuario nuevo
   */
   addUser(userData: any): Observable<any> {
-    return this.http.post(this.baseUrl + URL_API_USER_REGISTER, userData).pipe(
+    return this.http.post(this.baseUrl + this.storeUserApiUrl, userData).pipe(
       catchError(this.handleError)
     );
   }
