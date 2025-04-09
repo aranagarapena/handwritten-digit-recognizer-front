@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.component.css"],
+  "sourcesContent": [".navbar-nav .nav-link {\r\n  margin-right: 20px; \r\n} \r\n\r\n"],
+  "mappings": ";AAAA,CAAC,WAAW,CAAC;AACX,gBAAc;AAChB;",
+  "names": []
+}

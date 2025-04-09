@@ -1,0 +1,12 @@
+1. Desarrollo:
+
+    - Colocado en el directorio '/development' ejecutar: 
+        ng serve 
+
+    - Moverse al directorio '/front' y ejecutar: 
+        Move-Item -Path docs/browser/* -Destination docs/ -Force
+        Remove-Item -Path docs/browser -Recurse -Force
+
+2. Producción:
+    -
+    -

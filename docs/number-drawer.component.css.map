@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/game/number-drawer/number-drawer.component.css"],
+  "sourcesContent": [".container {\r\n  text-align: center;\r\n}\r\n\r\ncanvas {\r\n  border: 1px solid #000;\r\n}\r\n\r\n.miniaturas {\r\n  border: none;\r\n  padding: 10px;\r\n  margin-top: 3.25rem; /* Ajusta esta cantidad para alinear con la parte superior del lienzo */\r\n  width: 100%; /* O el ancho deseado para mantenerse dentro del tercio derecho */\r\n  max-height: 400px;\r\n  overflow-y: auto; /* Barra de desplazamiento vertical cuando es necesario */\r\n  display: flex;\r\n  flex-wrap: wrap; /* Permite que los elementos fluyan en m\u00FAltiples l\u00EDneas */\r\n  justify-content: flex-start; /* Alinea las miniaturas al inicio del contenedor */\r\n  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */\r\n}\r\n\r\n.img-thumbnail {\r\n  width: 50px;\r\n  height: auto;\r\n  margin: 2px;\r\n  border: 1px solid #ddd;\r\n  transition: transform 0.3s ease-in-out;\r\n}\r\n\r\n.img-thumbnail:hover {\r\n  transform: scale(1.3);\r\n  z-index: 1; /* Asegura que la imagen se eleve por encima de las dem\u00E1s al escalar */\r\n}\r\n\r\n"],
+  "mappings": ";AAAA,CAAC;AACC,cAAY;AACd;AAEA;AACE,UAAQ,IAAI,MAAM;AACpB;AAEA,CAAC;AACC,UAAQ;AACR,WAAS;AACT,cAAY;AACZ,SAAO;AACP,cAAY;AACZ,cAAY;AACZ,WAAS;AACT,aAAW;AACX,mBAAiB;AACjB,eAAa;AACf;AAEA,CAAC;AACC,SAAO;AACP,UAAQ;AACR,UAAQ;AACR,UAAQ,IAAI,MAAM;AAClB,cAAY,UAAU,KAAK;AAC7B;AAEA,CARC,aAQa;AACZ,aAAW,MAAM;AACjB,WAAS;AACX;",
+  "names": []
+}
