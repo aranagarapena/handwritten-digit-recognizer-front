@@ -14,17 +14,7 @@ export class AppComponent implements OnInit {
   private users: User[] = [];
 
   ngOnInit(): void {
-    // getUsers();
+    console.log('Componente principal AppComponent inicializado');
   }
 
-  getUsers() {
-    this.http.get("http://api-laravel.example.com/getusers").subscribe(
-      (res: any)=>{
-        this.users = res.data;
-        console.log("Usuarios: ",this.users);
-
-      },
-      (err)=>{console.log(err)})
-
-  }
 }
