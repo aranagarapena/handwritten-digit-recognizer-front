@@ -3,9 +3,22 @@
 
   <div class="row row-cols-1 row-cols-md-3 g-4">
     
+
     <!-- Tarjeta 1: Predicción -->
     <div class="col">
-        <div class="card h-100 shadow-sm border-primary" role="button" [routerLink]="'/predict'">
+        <div class="card h-100 shadow-sm border-primary" role="button" [routerLink]="'/number-drawer'">
+            <div class="card-body">
+                <h5 class="card-title text-primary"> ✏️ Introducir Números</h5>
+                <p class="card-text">
+                    Dibuja tus propios números y contribuye a que el modelo aprenda mejor con datos reales.                
+                </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 1: Predicción -->
+    <div class="col">
+        <div class="card h-100 shadow-sm border-primary" role="button">
             <div class="card-body">
                 <h5 class="card-title text-primary">🔍 Predecir</h5>
                 <p class="card-text">
@@ -14,29 +27,5 @@
         </div>
       </div>
     </div>
-    <!-- Tarjeta 2: Añadir dígitos -->
-    <div class="col">
-      <div class="card h-100 shadow-sm border-success" role="button">
-        <div class="card-body">
-          <h5 class="card-title text-success">📝 Dummy Card 2</h5>
-          <p class="card-text">
-            Dibuja números para mejorar el modelo preentrenado con tus propios datos.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tarjeta 3: Entrenar desde cero -->
-    <div class="col">
-      <div class="card h-100 shadow-sm border-warning" role="button">
-        <div class="card-body">
-          <h5 class="card-title text-warning">⚙️ Dummy Card 2</h5>
-          <p class="card-text">
-            Crea y entrena un modelo desde cero usando tus propios números escritos a mano.
-          </p>
-        </div>
-      </div>
-    </div>
-
   </div>
 </div>
