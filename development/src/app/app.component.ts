@@ -11,10 +11,13 @@ export class AppComponent implements OnInit {
 
   constructor(private http:HttpClient){}
 
-  users: User[] = [];
+  private users: User[] = [];
 
   ngOnInit(): void {
+    // getUsers();
+  }
 
+  getUsers() {
     this.http.get("http://api-laravel.example.com/getusers").subscribe(
       (res: any)=>{
         this.users = res.data;
@@ -22,6 +25,6 @@ export class AppComponent implements OnInit {
 
       },
       (err)=>{console.log(err)})
-  
+
   }
 }
