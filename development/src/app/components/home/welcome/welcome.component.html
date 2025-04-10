@@ -1,0 +1,42 @@
+<div class="container text-center mt-5">
+  <h1 class="mb-4">Handwritten Digit Recognizer</h1>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    
+    <!-- Tarjeta 1: Predicción -->
+    <div class="col">
+        <div class="card h-100 shadow-sm border-primary" role="button" [routerLink]="'/predict'">
+            <div class="card-body">
+                <h5 class="card-title text-primary">🔍 Predecir</h5>
+                <p class="card-text">
+                    Usa el modelo preentrenado con MNIST para reconocer dígitos escritos a mano.
+                </p>
+        </div>
+      </div>
+    </div>
+    <!-- Tarjeta 2: Añadir dígitos -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-success" role="button">
+        <div class="card-body">
+          <h5 class="card-title text-success">📝 Dummy Card 2</h5>
+          <p class="card-text">
+            Dibuja números para mejorar el modelo preentrenado con tus propios datos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3: Entrenar desde cero -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-warning" role="button">
+        <div class="card-body">
+          <h5 class="card-title text-warning">⚙️ Dummy Card 2</h5>
+          <p class="card-text">
+            Crea y entrena un modelo desde cero usando tus propios números escritos a mano.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

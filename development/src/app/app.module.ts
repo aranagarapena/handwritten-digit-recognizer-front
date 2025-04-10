@@ -14,6 +14,7 @@ import { NumberDrawerComponent } from './components/game/number-drawer/number-dr
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageDetailsModalComponent } from './components/game/image-details-modal/image-details-modal.component';
+import { WelcomeComponent } from './components/home/welcome/welcome.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ImageDetailsModalComponent } from './components/game/image-details-moda
     UserSignInComponent,
     HomeComponent,
     NumberDrawerComponent,
-    ImageDetailsModalComponent
+    ImageDetailsModalComponent,
+    WelcomeComponent
     ],
   imports: [
     BrowserModule,
