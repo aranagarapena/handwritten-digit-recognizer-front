@@ -58,7 +58,7 @@ export class NumberDrawerComponent implements AfterViewInit {
   }
 
   terminar(): void {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/welcome']);
   }
 
   draw(event: MouseEvent): void {

@@ -9,7 +9,6 @@ import { UserListComponent } from './components/login/user-list/user-list.compon
 import { UserAddComponent } from './components/login/user-add/user-add.component';
 import { UserLoginComponent } from './components/login/user-login/user-login.component';
 import { UserSignInComponent } from './components/login/user-sign-in/user-sign-in.component';
-import { HomeComponent } from './components/home/home/home.component';
 import { NumberDrawerComponent } from './components/game/number-drawer/number-drawer.component';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -24,7 +23,6 @@ import { WelcomeComponent } from './components/home/welcome/welcome.component';
     UserAddComponent,
     UserLoginComponent,
     UserSignInComponent,
-    HomeComponent,
     NumberDrawerComponent,
     ImageDetailsModalComponent,
     WelcomeComponent

@@ -3,29 +3,41 @@
 
   <div class="row row-cols-1 row-cols-md-3 g-4">
     
-
-    <!-- Tarjeta 1: Predicción -->
+    <!-- 🟦 Tarjeta 1: Predecir -->
     <div class="col">
-        <div class="card h-100 shadow-sm border-primary" role="button" [routerLink]="'/number-drawer'">
-            <div class="card-body">
-                <h5 class="card-title text-primary"> ✏️ Introducir Números</h5>
-                <p class="card-text">
-                    Dibuja tus propios números y contribuye a que el modelo aprenda mejor con datos reales.                
-                </p>
+      <div class="card h-100 shadow-sm border-primary text-primary" role="button">
+        <div class="card-body">
+          <h5 class="card-title">🔍 Predecir</h5>
+          <p class="card-text">
+            Usa el modelo preentrenado con MNIST para reconocer dígitos escritos a mano.
+          </p>
         </div>
       </div>
     </div>
 
-    <!-- Tarjeta 1: Predicción -->
+    <!-- 🟩 Tarjeta 2: Añadir números al modelo preentrenado -->
     <div class="col">
-        <div class="card h-100 shadow-sm border-primary" role="button">
-            <div class="card-body">
-                <h5 class="card-title text-primary">🔍 Predecir</h5>
-                <p class="card-text">
-                    Usa el modelo preentrenado con MNIST para reconocer dígitos escritos a mano.
-                </p>
+      <div class="card h-100 shadow-sm border-success text-success" role="button" [routerLink]="'/number-drawer'">
+        <div class="card-body">
+          <h5 class="card-title">✏️ Introducir dígitos</h5>
+          <p class="card-text">
+            Introduce nuevos números manuscritos para ayudar a mejorar el modelo preentrenado.
+          </p>
         </div>
       </div>
     </div>
+
+    <!-- 🟨 Tarjeta 3: Entrenar tu propio modelo -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-warning text-warning" role="button">
+        <div class="card-body">
+          <h5 class="card-title">⚙️ Entrenar desde cero</h5>
+          <p class="card-text">
+            Entrena un modelo propio con tus datos personalizados desde cero.
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
