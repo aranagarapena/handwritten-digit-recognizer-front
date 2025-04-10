@@ -2,6 +2,8 @@
 
 Este es el frontend del proyecto **Handwritten Digit Recognizer**, una aplicación web interactiva para dibujar dígitos manuscritos y obtener predicciones usando modelos basados en MNIST.
 
+Puedes probarlo [aquí](https://aranagarapena.github.io/handwritten-digit-recognizer-front/home)
+
 ---
 
 ## 📁 Estructura del proyecto
